@@ -36,6 +36,7 @@ Function: Ensures the system can handle a growing number of users and data sourc
 Interaction: The system is divided into microservices managed by Kubernetes for scalability and flexibility. Nginx distributes incoming traffic evenly across the system to maintain performance.
 
 # Question 3: Coding Question
+```
 
 from collections import defaultdict, Counter
 from datetime import datetime, timedelta
@@ -84,7 +85,7 @@ log_file = [
 ]
 
 print(top_k_users(log_file, 2))  # Output: ['User1', 'User3']
-
+```
 
 # Question 4: Salary Expectation
 
