@@ -7,28 +7,28 @@ As a software engineer with a passion for both technical excellence and continuo
 
 # Question 2: High-Level Architecture
 
-Data Collection:
+1. Data Collection:
 To gather e-commerce data from various websites, I would use APIs provided by e-commerce platforms to get structured data. Additionally, I would use web scraping tools like BeautifulSoup and Scrapy to extract information. The collected data would be stored in a database like MongoDB.
 
 Components: API Clients, Web Scrapers (using BeautifulSoup, Scrapy)
 Function: These components collect data from various e-commerce websites and APIs.
 Interaction: Web Scrapers extract unstructured data directly from websites, while API Clients retrieve structured data from e-commerce platforms' APIs. Both types of data are then stored in MongoDB.
 
-AI Agent:
+2. AI Agent:
 For analyzing and optimizing product listings, I would use AI models like BERT or GPT for text analysis. For predicting trends and finding optimization opportunities, I would use machine learning models like Random Forest or XGBoost.
 
 Components: NLP Models (BERT, GPT), Machine Learning Models (Random Forest, XGBoost)
 Function: Analyzes the stored data and provides insights and optimization recommendations.
 Interaction: The AI Agent retrieves data from MongoDB, processes it using NLP and machine learning models, and generates analysis results.
 
-User Interface:
+3. User Interface:
 The user interface would be a web application built with React.js, making it easy and interactive for users to use. Users can view and interact with data insights and optimization recommendations through dashboards.
 
 Components: Web Application (React.js)
 Function: Provides a platform for users to interact with the AI Agent and view the results.
 Interaction: Users interact with the web application, which requests analysis results from the AI Agent. The results are then displayed in an interactive dashboard.
 
-Scalability:
+4. Scalability:
 To handle an increasing number of users and data sources, I would use microservices architecture. This would allow us to manage different parts of the system independently. Kubernetes would help in managing these microservices, ensuring the system can scale easily. A load balancer like Nginx would distribute incoming traffic evenly, making sure the system runs smoothly.
 
 Components: Microservices Architecture, Kubernetes, Nginx Load Balancer
